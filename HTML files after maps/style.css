@@ -1,0 +1,65 @@
+/*----- Style.css -----*/
+* {
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: #0A0F0A; /* deep dataslate green‑black */
+}
+}
+body {
+    fill: rgba(0, 0, 255, 0);
+    stroke: rgba(0, 255, 255, 0);
+    stroke-width: .25;
+}
+svg path:hover {
+    fill: #7CFF6B;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.map-title {
+    text-align: center;
+    font-family: 'Roboto Condensed', 'Impact', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #7CFF6B  ;
+    margin-bottom: 4px;
+}
+
+.map-subtitle {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #7CFF6B  ;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.body-text {
+    text-align: justify;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #7CFF6B  ;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.center-button {
+    text-align: center;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #112B11;
+    border: 2px solid #7CFF6B;
+    color: #7CFF6B;
+    font-family: 'Share Tech Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.full-width {
+    width: 100%;
+    height: auto;
+    display: block;
+}
