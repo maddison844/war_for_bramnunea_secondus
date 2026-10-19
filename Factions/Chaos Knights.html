@@ -28,4 +28,139 @@
 </div>
 
 </body>
+
+<!-- Top level menu button -->
+    <button class="menu-button" onclick="toggleMenu()">Menu</button>
+
+    <div id="side-menu" class="side-menu">
+    <button class="close-button" onclick="toggleMenu()">Close ✕</button>
+    <button class="submenu-button" onclick="toggleSubmenu('Provinces')">
+        Provinces
+    </button>
+
+    <!--Menu "provinces" sub catagory  -->
+    <div id="Provinces" class="submenu">
+    <!-- provinces overview -->    
+    <a href="../4 provinces title\Interactive map 4 provinces.html"> Planetary Overview</a>
+    
+
+    <!-- Northern Provinces -->
+    <button class="submenu-button" onclick="toggleSubmenu('Northern Provinces')">
+        Northern Provinces
+    </button>
+    <div id="Northern Provinces" class="submenu">
+        <a href="../4 provinces title/Northern Provinces/Northern Provinces.html">Provincial Overview</a>
+        <a href="../4 provinces title/Northern Provinces/Viridianus Magna.html">Viridianus Magna</a>
+        <a href="../4 provinces title/Northern Provinces/Saint Biffobrin Reach.html">Saint Biffobrin Reach</a>
+        <a href="../4 provinces title/Northern Provinces/Widow’s Coast.html">Widow’s Coast</a>
+        <a href="../4 provinces title/Northern Provinces/Bastion Mortis.html">Bastion Mortis</a>
+
+</div>
+
+    <!-- Central Frontier -->
+     <button class="submenu-button" onclick="toggleSubmenu('Central Frontier')">
+        Central Frontier
+    </button>
+    <div id="Central Frontier" class="submenu">
+    <a href="../4 provinces title/Central Frontier/Central Frontier.html">Provincial Overview</a>
+    <a href="../4 provinces title/Central Frontier/Golden Vale.html">Golden Vale</a>
+    <a href="../4 provinces title/central frontier/saints end.html">Saint's End</a>
+    <a href="../4 provinces title/central frontier/south vale.html">South Vale</a>
+    <a href="../4 provinces title/central frontier/tithelands.html">Tithelands</a>
+ </div>
+
+        <!-- Western Marches -->
+     <button class="submenu-button" onclick="toggleSubmenu('Western Marches')">
+        Western Marches
+    </button>
+    <div id="../4 provinces title/Western Marches" class="submenu">
+    <a href="../4 provinces title/Western Marches/western marches.html">Provincial Overview</a>
+    <a href="../4 provinces title/Western Marches/Helix Coast.html">Helix Coast</a>
+    <a href="../4 provinces title/Western Marches/Redemptions Price.html">Redemption's Price</a>
+    <a href="../4 provinces title/Western Marches/Terra Terminus.html">Terra Terminus</a>
+    <a href="../4 provinces title/Western Marches/Valley of Judgement.html">Valley of Judgement</a>
+ </div>
+
+     <!-- Great Eastern Desert -->
+     <button class="submenu-button" onclick="toggleSubmenu('Great Eastern Desert')">
+        Great Eastern Desert
+    </button>
+    <div id="Great Eastern Desert" class="submenu">
+    <a href="../4 provinces title/The Great Eastern Desert/The Great Eastern Desert.html">Provincial Overview</a>
+    <a href="../4 provinces title/The Great Eastern Desert/Ashen Expanse.html">Ashen Expanse</a>
+    <a href="../4 provinces title/The Great Eastern Desert/Aurex Plateaux.html">Aurex Plateaux</a>
+    <a href="../4 provinces title/The Great Eastern Desert/Helican Tract.html">Helican Tract</a>
+    <a href="../4 provinces title/The Great Eastern Desert/Iron Barrens.html">Iron Barrens</a>
+    <a href="../4 provinces title/The Great Eastern Desert/Praetorian Flats.html">Praetorian Flats</a>
+ </div>
+
+   </div>
+ 
+
+     <!-- Alliances Menu Item -->
+    <button class="submenu-button" onclick="toggleSubmenu('Alliances')">
+        Alliances
+    </button>
+    <div id="Alliances" class="submenu">
+    
+    <button class="submenu-button" onclick="toggleSubmenu('Imperium')">
+        Imperium
+    </button>
+    <div id="Imperium" class="submenu">
+        <a href="Black Templars.html">Black Templars</a>
+        <a href="Sisters of Battle.html">Sisters of Battle</a>
+    </div>
+    <button class="submenu-button" onclick="toggleSubmenu('Chaos')">
+        Chaos
+    </button>
+    <div id="Chaos" class="submenu">
+        <a href="Chaos Knights.html">Knights</a>
+        <a href="Emperors Children.html">Emperors children</a>
+    </div>
+    <button class="submenu-button" onclick="toggleSubmenu('Xenos')">
+        Xenos
+    </button>
+    <div id="Xenos" class="submenu">
+        <a href="T'au.html">T'au</a>
+        <a href="Eldar.html">Eldar</a>
+    </div>
+
+    </button>
+
+    
+    </div>
+
+ <div id="menu-dropdown" class="menu-dropdown">
+        <a href="about.html">About</a>
+    
+    </div>
+
+</div>
+    <script>
+    function toggleMenu() {
+    const menu = document.getElementById("side-menu");
+    menu.style.left = (menu.style.left === "0px") ? "-250px" : "0px";
+}
+    </script>
+    <script>
+function toggleSubmenu(id) {
+    const submenu = document.getElementById(id);
+    const button = submenu.previousElementSibling;
+
+    // Close sibling submenus only
+    const siblings = Array.from(submenu.parentElement.children)
+        .filter(el => el.classList && el.classList.contains('submenu') && el.id !== id);
+
+    siblings.forEach(sib => {
+        sib.classList.remove('open');
+        sib.previousElementSibling.classList.remove('open');
+    });
+
+    // Toggle the clicked submenu
+    submenu.classList.toggle('open');
+    button.classList.toggle('open');
+}
+
+</script>
+
 </html>
