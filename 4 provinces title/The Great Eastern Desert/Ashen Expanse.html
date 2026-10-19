@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>War For Bramnunea</title>
+<link rel="stylesheet" href="../../style.css" type="text/css">
+</head>
+<body>
+
+<h1 class="map-title">Ashen Expanse — Endless Sand and the Silence of the Dead
+ </h1>
+<br>
+<br>
+
+<p class="body-text">  
+The Ashen Expanse is the purest desert on Branunea Secondus — a vast sea of fine, pale sand stretching from the Iron Barrens to the western border near Saint’s End. The dunes shift constantly, sculpted by relentless winds into towering ridges and deep hollows. Nothing grows here; nothing survives for long. Caravans avoid the region unless absolutely necessary, and even then only with experienced guides who know how to read the subtle language of the dunes.<br>
+
+The Expanse is a place of legend. Some say entire cities lie buried beneath the sands, swallowed by storms in ages past. Others speak of creatures that move beneath the dunes, hunting by vibration. The region’s silence is absolute — no birds, no insects, no life. Only the wind, and the whisper of shifting sand.<br>
+<br>
+<br>
+<br>
+</p>
+<p class="map-subtitle"> After the Rift </p><br>
+<br>
+<br>
+<p class="body-text"> 
+    The Rift’s opening turned the Ashen Expanse into a place of unnatural stillness. The winds died for days at a time, leaving the dunes frozen in place. Then, without warning, storms erupted with terrifying force, reshaping the landscape overnight. Travellers reported seeing figures standing atop distant dunes — silhouettes that vanished when approached. The Expanse’s sands began to glow faintly under the auroras, creating ghostly patterns visible only at night. In the age of Nihilus, the Ashen Expanse is the silent sea, a place where the boundary between desert and dream has all but dissolved.
+<br>
+<br>
+<br>
+
+ </p>
+<div class="center-button">
+    <a href="The Great Eastern Desert.html" class="back-button">Back</a>
+</div>
+ </body>
+
+ <!-- Top level menu button -->
+    <button class="menu-button" onclick="toggleMenu()">Menu</button>
+
+    <div id="side-menu" class="side-menu">
+    <button class="close-button" onclick="toggleMenu()">Close ✕</button>
+    <button class="submenu-button" onclick="toggleSubmenu('Provinces')">
+        Provinces
+    </button>
+
+    <!--Menu "provinces" sub catagory  -->
+    <div id="Provinces" class="submenu">
+    <!-- provinces overview -->    
+    <a href="../Interactive map 4 provinces.html"> Planetary Overview</a>
+    
+
+    <!-- Northern Provinces -->
+    <button class="submenu-button" onclick="toggleSubmenu('Northern Provinces')">
+        Northern Provinces
+    </button>
+    <div id="Northern Provinces" class="submenu">
+        <a href="../Northern Provinces/Northern Provinces.html">Provincial Overview</a>
+        <a href="../Northern Provinces/Viridianus Magna.html">Viridianus Magna</a>
+        <a href="../Northern Provinces/Saint Biffobrin Reach.html">Saint Biffobrin Reach</a>
+        <a href="../Northern Provinces/Widow’s Coast.html">Widow’s Coast</a>
+        <a href="../Northern Provinces/Bastion Mortis.html">Bastion Mortis</a>
+
+</div>
+
+    <!-- Central Frontier -->
+     <button class="submenu-button" onclick="toggleSubmenu('Central Frontier')">
+        Central Frontier
+    </button>
+    <div id="Central Frontier" class="submenu">
+    <a href="../Central Frontier/Central Frontier.html">Provincial Overview</a>
+    <a href="../Central Frontier/Golden Vale.html">Golden Vale</a>
+    <a href="../Central Frontier/Saints End.html">Saint's End</a>
+    <a href="../Central Frontier/South Vale.html">South Vale</a>
+    <a href="../Central Frontier/Tithelands.html">Tithelands</a>
+ </div>
+
+        <!-- Western Marches -->
+     <button class="submenu-button" onclick="toggleSubmenu('Western Marches')">
+        Western Marches
+    </button>
+    <div id="Western Marches" class="submenu">
+    <a href="Western Marches.html">Provincial Overview</a>
+    <a href="Helix Coast.html">Helix Coast</a>
+    <a href="Redemptions Price.html">Redemption's Price</a>
+    <a href="Terra Terminus.html">Terra Terminus</a>
+    <a href="Valley of Judgement.html">Valley of Judgement</a>
+ </div>
+
+     <!-- Great Eastern Desert -->
+     <button class="submenu-button" onclick="toggleSubmenu('Great Eastern Desert')">
+        Great Eastern Desert
+    </button>
+    <div id="Great Eastern Desert" class="submenu">
+    <a href="../The Great Eastern Desert/The Great Eastern Desert.html">Provincial Overview</a>
+    <a href="../The Great Eastern Desert/Ashen Expanse.html">Ashen Expanse</a>
+    <a href="../The Great Eastern Desert/Aurex Plateaux.html">Aurex Plateaux</a>
+    <a href="../The Great Eastern Desert/Helican Tract.html">Helican Tract</a>
+    <a href="../The Great Eastern Desert/Iron Barrens.html">Iron Barrens</a>
+    <a href="../The Great Eastern Desert/Praetorian Flats.html">Praetorian Flats</a>
+ </div>
+
+   </div>
+ 
+
+     <!-- Alliances Menu Item -->
+    <button class="submenu-button" onclick="toggleSubmenu('Alliances')">
+        Alliances
+    </button>
+    <div id="Alliances" class="submenu">
+    
+    <button class="submenu-button" onclick="toggleSubmenu('Imperium')">
+        Imperium
+    </button>
+    <div id="Imperium" class="submenu">
+        <a href="../../Factions/Black Templars.html">Black Templars</a>
+        <a href="../../Factions/Sisters of Battle.html">Sisters of Battle</a>
+    </div>
+    <button class="submenu-button" onclick="toggleSubmenu('Chaos')">
+        Chaos
+    </button>
+    <div id="Chaos" class="submenu">
+        <a href="../../Factions/Chaos Knights.html">Knights</a>
+        <a href="../../Factions/Emperors Children.html">Emperors children</a>
+    </div>
+    <button class="submenu-button" onclick="toggleSubmenu('Xenos')">
+        Xenos
+    </button>
+    <div id="Xenos" class="submenu">
+        <a href="../../Factions/T'au.html">T'au</a>
+        <a href="../../Factions/Eldar.html">Eldar</a>
+    </div>
+
+    </button>
+
+    
+    </div>
+
+ <div id="menu-dropdown" class="menu-dropdown">
+        <a href="about.html">About</a>
+    
+    </div>
+
+</div>
+    <script>
+    function toggleMenu() {
+    const menu = document.getElementById("side-menu");
+    menu.style.left = (menu.style.left === "0px") ? "-250px" : "0px";
+}
+    </script>
+    <script>
+function toggleSubmenu(id) {
+    const submenu = document.getElementById(id);
+    const button = submenu.previousElementSibling;
+
+    // Close sibling submenus only
+    const siblings = Array.from(submenu.parentElement.children)
+        .filter(el => el.classList && el.classList.contains('submenu') && el.id !== id);
+
+    siblings.forEach(sib => {
+        sib.classList.remove('open');
+        sib.previousElementSibling.classList.remove('open');
+    });
+
+    // Toggle the clicked submenu
+    submenu.classList.toggle('open');
+    button.classList.toggle('open');
+}
+
+</script>
+
+</html>

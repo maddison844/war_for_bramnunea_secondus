@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>War For Bramnunea</title>
+<link rel="stylesheet" href="../../style.css" type="text/css">
+</head>
+<body>
+
+<h1 class="map-title">Helix Coast — Cliffs, Storms, and the Sea That Devours </h1>
+<br>
+<br>
+
+<p class="body-text">     
+The Helix Coast is a brutal stretch of coastline defined by jagged cliffs, treacherous reefs, and waters prone to violent, unpredictable weather. Towering waves crash against the stone, carving spiralling formations that gave the region its name. Storms roll in without warning, turning the sea into a churning cauldron capable of swallowing ships whole. Few dare to sail these waters, and those who do are either desperate, brave, or foolish.<br>
+
+Inland, the coast gives way almost immediately to the dense, choking forests that dominate the Western Marches. Settlements cling to cliff edges or perch on rocky plateaus, their people hardened by generations of battling the sea and the jungle alike. The Helix Coast is known for its storm‑watchers, lighthouse‑fortresses, and the grim tradition of carving the names of the drowned into the cliff face — a memorial constantly threatened by the waves that claimed them.<br>
+<br>
+<br>
+<br>
+</p>
+<p class="map-subtitle"> After the Rift </p><br>
+<br>
+<br>
+<p class="body-text"> 
+The opening of the Great Rift transformed the Helix Coast into a place of near‑constant fury. Warp‑charged storms intensified the already violent weather, creating lightning displays that danced across the sea like living things. Entire sections of cliff collapsed into the ocean, and strange, phosphorescent tides washed ashore. Fishermen reported seeing ghostly shapes beneath the waves, and some claimed the storms whispered in human voices. The coast’s lighthouse‑fortresses became critical watchpoints, scanning both sea and sky for threats. In the age of Nihilus, the Helix Coast stands as the first warning line, where the planet’s storms and the galaxy’s madness meet.
+<br>
+<br>
+<br>
+
+ </p>
+ <div class="center-button">
+    <a href="Western Marches.html" class="back-button">Back</a>
+</div>
+ 
+
+ </body>
+
+ <!-- Top level menu button -->
+    <button class="menu-button" onclick="toggleMenu()">Menu</button>
+
+    <div id="side-menu" class="side-menu">
+    <button class="close-button" onclick="toggleMenu()">Close ✕</button>
+    <button class="submenu-button" onclick="toggleSubmenu('Provinces')">
+        Provinces
+    </button>
+
+    <!--Menu "provinces" sub catagory  -->
+    <div id="Provinces" class="submenu">
+    <!-- provinces overview -->    
+    <a href="../Interactive map 4 provinces.html"> Planetary Overview</a>
+    
+
+    <!-- Northern Provinces -->
+    <button class="submenu-button" onclick="toggleSubmenu('Northern Provinces')">
+        Northern Provinces
+    </button>
+    <div id="Northern Provinces" class="submenu">
+        <a href="../Northern Provinces/Northern Provinces.html">Provincial Overview</a>
+        <a href="../Northern Provinces/Viridianus Magna.html">Viridianus Magna</a>
+        <a href="../Northern Provinces/Saint Biffobrin Reach.html">Saint Biffobrin Reach</a>
+        <a href="../Northern Provinces/Widow’s Coast.html">Widow’s Coast</a>
+        <a href="../Northern Provinces/Bastion Mortis.html">Bastion Mortis</a>
+
+</div>
+
+    <!-- Central Frontier -->
+     <button class="submenu-button" onclick="toggleSubmenu('Central Frontier')">
+        Central Frontier
+    </button>
+    <div id="Central Frontier" class="submenu">
+    <a href="../Central Frontier/Central Frontier.html">Provincial Overview</a>
+    <a href="../Central Frontier/Golden Vale.html">Golden Vale</a>
+    <a href="../Central Frontier/Saints End.html">Saint's End</a>
+    <a href="../Central Frontier/South Vale.html">South Vale</a>
+    <a href="../Central Frontier/Tithelands.html">Tithelands</a>
+ </div>
+
+        <!-- Western Marches -->
+     <button class="submenu-button" onclick="toggleSubmenu('Western Marches')">
+        Western Marches
+    </button>
+    <div id="Western Marches" class="submenu">
+    <a href="Western Marches.html">Provincial Overview</a>
+    <a href="Helix Coast.html">Helix Coast</a>
+    <a href="Redemptions Price.html">Redemption's Price</a>
+    <a href="Terra Terminus.html">Terra Terminus</a>
+    <a href="Valley of Judgement.html">Valley of Judgement</a>
+ </div>
+
+     <!-- Great Eastern Desert -->
+     <button class="submenu-button" onclick="toggleSubmenu('Great Eastern Desert')">
+        Great Eastern Desert
+    </button>
+    <div id="Great Eastern Desert" class="submenu">
+    <a href="../The Great Eastern Desert/The Great Eastern Desert.html">Provincial Overview</a>
+    <a href="../The Great Eastern Desert/Ashen Expanse.html">Ashen Expanse</a>
+    <a href="../The Great Eastern Desert/Aurex Plateaux.html">Aurex Plateaux</a>
+    <a href="../The Great Eastern Desert/Helican Tract.html">Helican Tract</a>
+    <a href="../The Great Eastern Desert/Iron Barrens.html">Iron Barrens</a>
+    <a href="../The Great Eastern Desert/Praetorian Flats.html">Praetorian Flats</a>
+ </div>
+
+   </div>
+ 
+
+     <!-- Alliances Menu Item -->
+    <button class="submenu-button" onclick="toggleSubmenu('Alliances')">
+        Alliances
+    </button>
+    <div id="Alliances" class="submenu">
+    
+    <button class="submenu-button" onclick="toggleSubmenu('Imperium')">
+        Imperium
+    </button>
+    <div id="Imperium" class="submenu">
+        <a href="../../Factions/Black Templars.html">Black Templars</a>
+        <a href="../../Factions/Sisters of Battle.html">Sisters of Battle</a>
+    </div>
+    <button class="submenu-button" onclick="toggleSubmenu('Chaos')">
+        Chaos
+    </button>
+    <div id="Chaos" class="submenu">
+        <a href="../../Factions/Chaos Knights.html">Knights</a>
+        <a href="../../Factions/Emperors Children.html">Emperors children</a>
+    </div>
+    <button class="submenu-button" onclick="toggleSubmenu('Xenos')">
+        Xenos
+    </button>
+    <div id="Xenos" class="submenu">
+        <a href="../../Factions/T'au.html">T'au</a>
+        <a href="../../Factions/Eldar.html">Eldar</a>
+    </div>
+
+    </button>
+
+    
+    </div>
+
+ <div id="menu-dropdown" class="menu-dropdown">
+        <a href="about.html">About</a>
+    
+    </div>
+
+</div>
+    <script>
+    function toggleMenu() {
+    const menu = document.getElementById("side-menu");
+    menu.style.left = (menu.style.left === "0px") ? "-250px" : "0px";
+}
+    </script>
+    <script>
+function toggleSubmenu(id) {
+    const submenu = document.getElementById(id);
+    const button = submenu.previousElementSibling;
+
+    // Close sibling submenus only
+    const siblings = Array.from(submenu.parentElement.children)
+        .filter(el => el.classList && el.classList.contains('submenu') && el.id !== id);
+
+    siblings.forEach(sib => {
+        sib.classList.remove('open');
+        sib.previousElementSibling.classList.remove('open');
+    });
+
+    // Toggle the clicked submenu
+    submenu.classList.toggle('open');
+    button.classList.toggle('open');
+}
+
+</script>
+
+
+</html>
