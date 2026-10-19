@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>War For Bramnunea</title>
+<link rel="stylesheet" href="../../style.css" type="text/css">
+</head>
+<body>
+
+<h1 class="map-title"> Golden Vale -  Fertile, Faithful, and Forever Overshadowed </h1>
+<br>
+<br>
+<p class="body-text">
+The Golden Vale is a region of rolling fields, soft hills, and warm, sun‑washed plains. Its soil is fertile, though not as rich or intensively cultivated as the Tithlands to the east. The Vale’s farmers often joke that their land “grows enough to live, but not enough to boast,” and this humility has shaped the region’s culture. Villages here are small but tightly knit, built around communal granaries, old stone chapels, and market greens where seasonal fairs bring the scattered communities together.<br>
+
+The Vale’s name comes not from its productivity but from the golden hue that sweeps across its fields at dawn and dusk — a natural beauty that has inspired poets, painters, and pilgrims for centuries. The region is known for its orchards, its hardy grain varieties, and its tradition of producing skilled horse‑handlers and scouts. Though overshadowed by the Tithlands’ tithe‑scale output, the Golden Vale is considered the soul of the Central Frontier — a place where the land is worked with reverence rather than obligation. <br>
+
+<br>
+<br>
+<br>
+</p>
+<p class="map-subtitle"> After the Rift </p><br>
+<br>
+<br>
+<p class="body-text"> 
+    The opening of the Great Rift brought unpredictable weather to the Vale. Sudden frosts, unseasonal rains, and shimmering warp‑lights in the sky disrupted planting cycles. Yet the Vale adapted with quiet determination. Farmers began experimenting with hybrid crops, and the region’s chapels became centres of communal resilience. Some claim that the golden light of the Vale has grown brighter since the Rift — a sign, they say, that the Emperor still watches over them. Whether miracle or myth, the Golden Vale has become a symbol of hope in a darkened galaxy.
+<br>
+<br>
+<br>
+
+ </p>
+<div class="center-button">
+    <a href="Central Frontier.html" class="back-button">Back</a>
+
+     <!-- Top level menu button -->
+    <button class="menu-button" onclick="toggleMenu()">Menu</button>
+
+    <div id="side-menu" class="side-menu">
+    <button class="close-button" onclick="toggleMenu()">Close ✕</button>
+    <button class="submenu-button" onclick="toggleSubmenu('Provinces')">
+        Provinces
+    </button>
+
+    <!--Menu "provinces" sub catagory  -->
+    <div id="Provinces" class="submenu">
+    <!-- provinces overview -->    
+    <a href="../Interactive map 4 provinces.html"> Planetary Overview</a>
+    
+
+    <!-- Northern Provinces -->
+    <button class="submenu-button" onclick="toggleSubmenu('Northern Provinces')">
+        Northern Provinces
+    </button>
+    <div id="Northern Provinces" class="submenu">
+        <a href="../Northern Provinces/Northern Provinces.html">Provincial Overview</a>
+        <a href="../Northern Provinces/Viridianus Magna.html">Viridianus Magna</a>
+        <a href="../Northern Provinces/Saint Biffobrin Reach.html">Saint Biffobrin Reach</a>
+        <a href="../Northern Provinces/Widow’s Coast.html">Widow’s Coast</a>
+        <a href="../Northern Provinces/Bastion Mortis.html">Bastion Mortis</a>
+
+</div>
+
+    <!-- Central Frontier -->
+     <button class="submenu-button" onclick="toggleSubmenu('Central Frontier')">
+        Central Frontier
+    </button>
+    <div id="Central Frontier" class="submenu">
+    <a href="Central Frontier.html">Provincial Overview</a>
+    <a href="Golden Vale.html">Golden Vale</a>
+    <a href="Saints End.html">Saint's End</a>
+    <a href="South Vale.html">South Vale</a>
+    <a href="Tithelands.html">Tithelands</a>
+ </div>
+
+        <!-- Western Marches -->
+     <button class="submenu-button" onclick="toggleSubmenu('Western Marches')">
+        Western Marches
+    </button>
+    <div id="Western Marches" class="submenu">
+    <a href="../Western Marches/Western Marches.html">Provincial Overview</a>
+    <a href="../Western Marches/Helix Coast.html">Helix Coast</a>
+    <a href="../Western Marches/Redemptions Price.html">Redemption's Price</a>
+    <a href="../Western Marches/Terra Terminus.html">Terra Terminus</a>
+    <a href="../Western Marches/Valley of Judgement.html">Valley of Judgement</a>
+ </div>
+
+     <!-- Great Eastern Desert -->
+     <button class="submenu-button" onclick="toggleSubmenu('Great Eastern Desert')">
+        Great Eastern Desert
+    </button>
+    <div id="Great Eastern Desert" class="submenu">
+    <a href="../The Great Eastern Desert/The Great Eastern Desert.html">Provincial Overview</a>
+    <a href="../The Great Eastern Desert/Ashen Expanse.html">Ashen Expanse</a>
+    <a href="../The Great Eastern Desert/Aurex Plateaux.html">Aurex Plateaux</a>
+    <a href="../The Great Eastern Desert/Helican Tract.html">Helican Tract</a>
+    <a href="../The Great Eastern Desert/Iron Barrens.html">Iron Barrens</a>
+    <a href="../The Great Eastern Desert/Praetorian Flats.html">Praetorian Flats</a>
+ </div>
+
+   </div>
+ 
+
+     <!-- Alliances Menu Item -->
+    <button class="submenu-button" onclick="toggleSubmenu('Alliances')">
+        Alliances
+    </button>
+    <div id="Alliances" class="submenu">
+    
+    <button class="submenu-button" onclick="toggleSubmenu('Imperium')">
+        Imperium
+    </button>
+    <div id="Imperium" class="submenu">
+        <a href="../../Factions/Black Templars.html">Black Templars</a>
+        <a href="../../Factions/Sisters of Battle.html">Sisters of Battle</a>
+    </div>
+    <button class="submenu-button" onclick="toggleSubmenu('Chaos')">
+        Chaos
+    </button>
+    <div id="Chaos" class="submenu">
+        <a href="../../Factions/Chaos Knights.html">Knights</a>
+        <a href="../../Factions/Emperors Children.html">Emperors children</a>
+    </div>
+    <button class="submenu-button" onclick="toggleSubmenu('Xenos')">
+        Xenos
+    </button>
+    <div id="Xenos" class="submenu">
+        <a href="../../Factions/T'au.html">T'au</a>
+        <a href="../../Factions/Eldar.html">Eldar</a>
+    </div>
+
+    </button>
+
+    
+    </div>
+
+ <div id="menu-dropdown" class="menu-dropdown">
+        <a href="about.html">About</a>
+    
+    </div>
+
+</div>
+    <script>
+    function toggleMenu() {
+    const menu = document.getElementById("side-menu");
+    menu.style.left = (menu.style.left === "0px") ? "-250px" : "0px";
+}
+    </script>
+    <script>
+function toggleSubmenu(id) {
+    const submenu = document.getElementById(id);
+    const button = submenu.previousElementSibling;
+
+    // Close sibling submenus only
+    const siblings = Array.from(submenu.parentElement.children)
+        .filter(el => el.classList && el.classList.contains('submenu') && el.id !== id);
+
+    siblings.forEach(sib => {
+        sib.classList.remove('open');
+        sib.previousElementSibling.classList.remove('open');
+    });
+
+    // Toggle the clicked submenu
+    submenu.classList.toggle('open');
+    button.classList.toggle('open');
+}
+
+</script>
+</div>
+ 
